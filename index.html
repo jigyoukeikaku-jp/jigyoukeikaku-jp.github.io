@@ -66,6 +66,21 @@
       padding: 20px;
       font-size: 14px;
     }
+    #quotes {
+  background: #0b3c8a;
+}
+
+#quote-text {
+  font-size: 22px;
+  line-height: 1.8;
+  margin-top: 40px;
+}
+
+#quote-author {
+  margin-top: 16px;
+  font-size: 16px;
+}
+
   </style>
 </head>
 
@@ -73,7 +88,7 @@
 
   <!-- ヒーロー -->
   <section id="hero">
-    <h1>事業計画.jp</h1>
+    <h1>株式会社事業計画</h1>
     <p>
       行動につながる事業設計を。<br>
       思考と実践をつなぐための拠点です。
@@ -105,6 +120,17 @@
     <a class="arrow" href="#profile">▼</a>
   </section>
 
+  <!-- 名言 -->
+<section id="quotes">
+  <h2>言葉</h2>
+  <p id="quote-text">
+    <!-- JSで差し替え -->
+  </p>
+  <p id="quote-author" style="opacity:0.7;"></p>
+
+  <a class="arrow" href="#profile">▼</a>
+</section>
+
   <!-- 略歴 -->
   <section id="profile">
     <h2>略歴</h2>
@@ -130,6 +156,43 @@
   <footer>
     © 2025 事業計画.jp
   </footer>
+<script>
+  const quotes = [
+    {
+      text: "完璧を目指すより、まず終わらせよ。",
+      author: "マーク・ザッカーバーグ"
+    },
+    {
+      text: "アイデアより実行が重要だ。",
+      author: "ピーター・ドラッカー"
+    },
+    {
+      text: "人は計画ではなく、行動によって学ぶ。",
+      author: "リード・ホフマン"
+    },
+    {
+      text: "小さく始め、速く学べ。",
+      author: "エリック・リース"
+    },
+    {
+      text: "シンプルさは究極の洗練である。",
+      author: "レオナルド・ダ・ヴィンチ"
+    }
+  ];
+
+  let index = 0;
+  const textEl = document.getElementById("quote-text");
+  const authorEl = document.getElementById("quote-author");
+
+  function showQuote() {
+    textEl.textContent = `「${quotes[index].text}」`;
+    authorEl.textContent = `— ${quotes[index].author}`;
+    index = (index + 1) % quotes.length;
+  }
+
+  showQuote(); // 初回表示
+  setInterval(showQuote, 6000); // 6秒ごとに切替
+</script>
 
 </body>
 </html>
