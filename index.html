@@ -1,19 +1,135 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>事業計画.jp</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   <style>
+    /* ===== 全体設定 ===== */
+    html {
+      scroll-behavior: smooth; /* スムーズスクロール */
+    }
+
     body {
-      font-family: sans-serif;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+                   "Hiragino Kaku Gothic ProN", "Noto Sans JP", sans-serif;
+      color: #ffffff;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 80px 10%;
+      box-sizing: border-box;
+      position: relative;
+    }
+
+    h1, h2 {
+      margin-top: 0;
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 18px;
+      max-width: 720px;
+    }
+
+    /* ===== 色分け ===== */
+    #hero { background: #2f4fa3; }
+    #about { background: #1e88e5; }
+    #philosophy { background: #1565c0; }
+    #profile { background: #0d47a1; }
+    #company { background: #08306b; }
+
+    /* ===== 下矢印 ===== */
+    .arrow {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 32px;
+      text-decoration: none;
+      color: #ffffff;
+      opacity: 0.7;
+    }
+
+    .arrow:hover {
+      opacity: 1;
+    }
+
+    /* ===== フッター ===== */
+    footer {
+      background: #000000;
+      color: #cccccc;
       text-align: center;
-      padding: 40px;
+      padding: 20px;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
-  <h1>事業計画.jp</h1>
-  <p>GitHub Pages テスト公開中</p>
+
+  <!-- ヒーロー -->
+  <section id="hero">
+    <h1>事業計画.jp</h1>
+    <p>
+      行動につながる事業設計を。<br>
+      思考と実践をつなぐための拠点です。
+    </p>
+
+    <a class="arrow" href="#about">▼</a>
+  </section>
+
+  <!-- 何者なのか -->
+  <section id="about">
+    <h2>何者なのか</h2>
+    <p>
+      起業・事業設計・教育の分野を中心に、<br>
+      大学、自治体、起業家支援の現場に関わっています。
+    </p>
+
+    <a class="arrow" href="#philosophy">▼</a>
+  </section>
+
+  <!-- 思想・スタンス -->
+  <section id="philosophy">
+    <h2>思想・スタンス</h2>
+    <p>
+      大きな成功よりも、<br>
+      再現性のある一歩を積み重ねることを重視しています。<br>
+      「できるところから始める」ための設計が専門です。
+    </p>
+
+    <a class="arrow" href="#profile">▼</a>
+  </section>
+
+  <!-- 略歴 -->
+  <section id="profile">
+    <h2>略歴</h2>
+    <p>
+      起業支援・事業設計を軸に活動。<br>
+      大学での起業教育、自治体の創業支援事業、<br>
+      実践型プログラムの設計・運営に携わる。
+    </p>
+
+    <a class="arrow" href="#company">▼</a>
+  </section>
+
+  <!-- 会社概要 -->
+  <section id="company">
+    <h2>会社概要</h2>
+    <p>
+      名称：〇〇（屋号・法人名）<br>
+      事業内容：起業支援／事業設計／教育プログラム企画<br>
+      連絡先：contact@example.com
+    </p>
+  </section>
+
+  <footer>
+    © 2025 事業計画.jp
+  </footer>
+
 </body>
 </html>
