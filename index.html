@@ -79,6 +79,39 @@
     #quotes {
   background: #0b3c8a;
 }
+/* ===== 会社概要テーブル ===== */
+.company-table {
+  width: 100%;
+  max-width: 720px;
+  margin-top: 40px;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+.company-table th,
+.company-table td {
+  padding: 14px 12px;
+  vertical-align: top;
+}
+
+.company-table th {
+  width: 160px;
+  text-align: left;
+  font-weight: 600;
+  color: #ffffff;
+  opacity: 0.85;
+}
+
+.company-table td {
+  color: #e6e9f0;
+  line-height: 1.7;
+}
+
+/* 行の区切り（罫線ではなく余白） */
+.company-table tr + tr th,
+.company-table tr + tr td {
+  padding-top: 18px;
+}
  /* ===== 名言 ===== */
 #quote-text {
   font-size: 18px;
@@ -152,18 +185,19 @@
  
   <!-- 略歴 -->
   <section id="profile">
-    <h2>代表者のプロフィール<br>
-   
+    <h2>代表者のプロフィール</h2><br>
+<br>   
+<p> 
 駒林健一（こまばやしけんいち）<br>
-KENICHI KOMABAYASHI <br></h2>
- <p> 
+KENICHI KOMABAYASHI <br>
+ 
 株式会社事業計画　代表取締役 <br>
 明星大学経営学部　客員教授 <br>
 板橋区立企業活性化センター　指定管理者 <br>　
    
 「高い志を持った起業家を1000人輩出する」ことを目標に、ベンチャー企業専業のプロフェッショナルとして、多くのビジネスの立ち上げに従事。
 現在でも、役員や顧問として、十数社のベンチャー企業の経営に関与している。<br>
-明星大学では2008年度より「起業マネジメント論」、「ビジネスプランニング」を指導。 <br>
+明星大学経営学部では2008年度より「起業マネジメント論」、「ビジネスプランニング」を指導。 <br>
 行政関連では、板橋区の創業支援施設「板橋区立企業活性化センター」の指定管理者として2005年4月より運営受託。 <br>
 著書に「経営のしくみ入門の入門（日本実業出版）」、「起業の真実」がある。
     </p>
@@ -173,13 +207,43 @@ KENICHI KOMABAYASHI <br></h2>
 
   <!-- 会社概要 -->
   <section id="company">
-    <h2>会社概要</h2>
-    <p>
-      名称：〇〇（屋号・法人名）<br>
-      事業内容：起業支援／事業設計／教育プログラム企画<br>
-      連絡先：contact@example.com
-    </p>
-  </section>
+  <h2>会社概要</h2>
+
+  <table class="company-table">
+    <tr>
+      <th>名称</th>
+      <td>株式会社事業計画</td>
+    </tr>
+    <tr>
+      <th>事業内容</th>
+      <td>
+・新規事業の立案相談、アドバイス<br>
+・起業機会の発掘、事業化へのアドバイスス<br>
+・AIを使った高速事業立ち上げメソッドの提案、研修ス<br>
+・ビジネスプランの立案、作成ス<br>
+・ビジネスプランの事業性の検証、アドバイスス<br>
+・起業家向け講演会、ビジネスプランコンテストの開催ス<br>
+      </td>
+    </tr>
+    <tr>
+      <th>代表</th>
+      <td>駒林健一</td>
+    </tr>
+    <tr>
+      <th>所在地></th>
+      <td>
+        東京都板橋区小茂根3－6－23－402　（2022年8月移転しました）
+      </td>
+    </tr>
+    <tr>
+      <th>連絡先</th>
+      <td>
+       nfo＠jigyoukeikaku.jp<br>
+※スパム対策のため「＠」を大文字で掲載いたしております。
+      </td>
+    </tr>
+  </table>
+</section>
 
   <footer>
     © 2025 株式会社事業計画
