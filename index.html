@@ -156,7 +156,36 @@ a:hover {
 .company-table tr + tr td {
   padding-top: 18px;
 }
- /* ===== 名言 ===== */
+/* ===== モバイル用：会社概要テーブル調整 ===== */
+@media (max-width: 600px) {
+
+  .company-table,
+  .company-table tbody,
+  .company-table tr,
+  .company-table th,
+  .company-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .company-table tr {
+    margin-bottom: 24px;
+  }
+
+  .company-table th {
+    width: auto;
+    padding-bottom: 6px;
+    font-weight: 600;
+    opacity: 0.9;
+  }
+
+  .company-table td {
+    padding-top: 0;
+    line-height: 1.8;
+  }
+}
+
+    /* ===== 名言 ===== */
 #quote-text {
   font-size: 20px;          /* 少しだけ大きく */
   line-height: 1.7;
