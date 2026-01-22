@@ -31,8 +31,8 @@
   <meta name="twitter:description" content="2003年創業。ソロ起業・新規事業の立案、事業計画作成、AI活用による高速立ち上げ支援、研修・講演を提供。" />
   <meta name="twitter:image" content="https://jigyoukeikaku.jp/ogp.png" />
   <meta name="twitter:site" content="@jigyoukeikaku" />
-</style>
-  <! ===== 全体設定 ===== -->
+  <!-- ===== 全体設定 ===== -->
+  <style>
     html {
       scroll-behavior: smooth; /* スムーズスクロール */
     }
@@ -52,18 +52,27 @@
     }
 
     h1 {
-      margin-top: 0;font-size: 28px;color: #ffffff;
+      margin-top: 0;
+      font-size: 28px;
+      color: #ffffff;
     }
+
     h2 {
-      margin-top: 0;font-size: 20px;color: #ffffff;
+      margin-top: 0;
+      font-size: 20px;
+      color: #ffffff;
     }
+
     #hero h2 {
-  margin-top: 24px;
-}
+      margin-top: 24px;
+    }
 
     h3 {
-      margin-top: 0;font-size: 16px;color: #ffffff;
+      margin-top: 0;
+      font-size: 16px;
+      color: #ffffff;
     }
+
     p {
       line-height: 1.8;
       font-size: 14px;
@@ -71,21 +80,10 @@
     }
 
     /* ===== 色分け ===== */
-   #hero {
-  background: #1f2a44;
-}
-
-#philosophy {
-  background: #2b4f8c;
-}
-
-#profile {
-  background: #16335f;
-}
-
-#company {
-  background: #0f2342;
-}
+    #hero { background: #1f2a44; }
+    #philosophy { background: #2b4f8c; }
+    #profile { background: #16335f; }
+    #company { background: #0f2342; }
 
     /* ===== 下矢印 ===== */
     .arrow {
@@ -104,147 +102,79 @@
     }
 
     /* ===== フッター ===== */
-  footer {
-  background: #000000;
-  text-align: center;
-  padding: 40px 20px 24px;
-}
+    footer {
+      background: #000000;
+      text-align: center;
+      padding: 40px 20px 24px;
+    }
 
-.sns-links {
-  display: flex;
-  justify-content: center; /* ← 真ん中揃え */
-  gap: 16px;
-  margin-bottom: 24px;
-  flex-wrap: wrap;
-}
+    .sns-links {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 24px;
+      flex-wrap: wrap;
+    }
 
-.sns-links a {
-  border: 1px solid #ffffff;
-  border-radius: 999px;
-  padding: 10px 18px;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 14px;
-  white-space: nowrap;
-}
+    .sns-links a {
+      border: 1px solid #ffffff;
+      border-radius: 999px;
+      padding: 10px 18px;
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 14px;
+      white-space: nowrap;
+    }
 
-.sns-links a:hover {
-  background: #ffffff;
-  color: #0f2342;
-}
+    .sns-links a:hover {
+      background: #ffffff;
+      color: #0f2342;
+    }
 
-footer .copyright {
-  font-size: 13px;
-  color: #cfd6e4;
-}
-/* ===== リンク共通スタイル ===== */
-a {
-  color: #e6e9f0;              /* 本文と同色 */
-  text-decoration: underline; /* 下線でリンク性を担保 */
-  text-underline-offset: 4px;
-}
+    a {
+      color: #e6e9f0;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
 
-a:hover {
-  color: #ffffff;              /* hoverで少し明るく */
-  text-decoration-thickness: 2px;
-}
-
-/* ===== 会社概要テーブル ===== */
-.company-table {
-  width: 100%;
-  max-width: 720px;
-  margin-top: 30px;
-  border-collapse: collapse;
-  font-size: 16px;
-}
-
-.company-table th,
-.company-table td {
-  padding: 14px 12px;
-  vertical-align: top;
-}
-
-.company-table th {
-  width: 160px;
-  text-align: left;
-  font-weight: 600;
-  color: #ffffff;
-  opacity: 0.85;
-}
-
-.company-table td {
-  color: #e6e9f0;
-  line-height: 1.7;
-}
-
-/* 行の区切り（罫線ではなく余白） */
-.company-table tr + tr th,
-.company-table tr + tr td {
-  padding-top: 18px;
-}
-/* ===== モバイル用：会社概要テーブル調整 ===== */
-@media (max-width: 600px) {
-
-  .company-table,
-  .company-table tbody,
-  .company-table tr,
-  .company-table th,
-  .company-table td {
-    display: block;
-    width: 100%;
-  }
-
-  .company-table tr {
-    margin-bottom: 24px;
-  }
-
-  .company-table th {
-    width: auto;
-    padding-bottom: 6px;
-    font-weight: 600;
-    opacity: 0.9;
-  }
-
-  .company-table td {
-    padding-top: 0;
-    line-height: 1.8;
-  }
-}
+    a:hover {
+      color: #ffffff;
+      text-decoration-thickness: 2px;
+    }
 
     /* ===== 名言 ===== */
-#quote-text {
-  font-size: 20px;          /* 少しだけ大きく */
-  line-height: 1.7;
-  margin-top: 40px;
-  white-space: pre-line;   /* ← 改行を反映 */
-}
+    #quote-text {
+      font-size: 20px;
+      line-height: 1.7;
+      margin-top: 40px;
+      white-space: pre-line;
+    }
 
-#quote-author {
-  margin-top: 16px;
-  font-size: 16px;         /* 名言より控えめ */
-  opacity: 0.8;
-}
+    #quote-author {
+      margin-top: 16px;
+      font-size: 16px;
+      opacity: 0.8;
+    }
 
-#top-link {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1000;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 14px;
-  color: #ffffff;
-  background: rgba(0,0,0,0.4);
-  padding: 6px 10px;
-  border-radius: 4px;
-}
+    #top-link {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 1000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 14px;
+      color: #ffffff;
+      background: rgba(0,0,0,0.4);
+      padding: 6px 10px;
+      border-radius: 4px;
+    }
 
-#top-link:hover {
-  background: rgba(0,0,0,0.6);
-}
-
-
+    #top-link:hover {
+      background: rgba(0,0,0,0.6);
+    }
   </style>
+
 </head>
 
 
